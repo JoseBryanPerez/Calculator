@@ -22,5 +22,14 @@ int main()
     case 4: result = num1 / num2; break;
    }
    
-   printf("The result is %d.", result);
+   if (operator == 1)
+      printf("The sum of %d + %d is %d.", num1, num2, result);
+   else if (operator == 2)
+      printf("The difference of %d - %d is %d.", num1, num2, result);
+   else if (operator == 3)
+      printf("The product of %d * %d is %d.", num1, num2, result);
+   else if (operator == 4)
+      printf("The quotient of %d / %d is %d.", num1, num2, result);
+   else
+      printf("Invalid operator input");
 }
